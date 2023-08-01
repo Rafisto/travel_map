@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import TripTitle from "../components/TripTitle";
 import TripContentText from "../components/content/text";
 import TripContentMap from "../components/content/map";
+import { TripContentImageText } from "../components/content/imageText";
+import { Footer } from "../general/footer";
 
 interface TripContents {
   title: string;
@@ -77,10 +79,21 @@ export const TripPlanner = () => {
                       }
                     />
                   );
+                case "image":
+                  return (
+                    <TripContentImageText
+                      key={`${content.type}-${i}`}
+                      header={content.obj.header as string}
+                      text={content.obj.text as string}
+                      image={content.obj.image as string}
+                      caption={content.obj.caption as string}
+                    />
+                  );
               }
             })}
           </Box>
         </Box>
+        <Footer />
       </>
     );
   } else {
