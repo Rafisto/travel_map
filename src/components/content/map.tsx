@@ -21,7 +21,7 @@ const TripContentMap = ({obj}: TripContentMapProps) => {
             <Box sx={{...HeaderWrapperStyle,marginBottom:"20px"}}>
                 <Typography sx={HeaderTextStyle}>{obj.settings.header}</Typography>
             </Box>
-            <MapContainer center={[parseFloat(obj.settings.lat), parseFloat(obj.settings.lon)]} zoom={parseInt(obj.settings.zoom)} scrollWheelZoom={true} style={{height: "500px"}}>
+            <MapContainer attributionControl={false} center={[parseFloat(obj.settings.lat), parseFloat(obj.settings.lon)]} zoom={parseInt(obj.settings.zoom)} scrollWheelZoom={true} style={{height: "500px"}}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
