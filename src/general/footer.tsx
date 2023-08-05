@@ -1,14 +1,10 @@
 import { Container, Divider } from "@mui/material";
-
-const FooterWrapperStyle = {
-  marginBlock: "50px",
-  textAlign: "center",
-};
+import { CenteredWrapperStyle } from "./.styles";
 
 export const Footer = () => {
   return (
     <>
-      <Container sx={FooterWrapperStyle}>
+      <Container sx={CenteredWrapperStyle}>
         <Divider sx={{marginBottom:"20px"}}/>
         Rafał Włodarczyk 2023 © All Rights Reserved<br/>
         rafal.piotr.wlodarczyk@gmail.com<br/><br/>

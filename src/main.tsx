@@ -1,9 +1,9 @@
-import { ThemeProvider } from "@emotion/react";
-import { CssBaseline, Box } from "@mui/material";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { AppTheme } from "./general/theme";
 import { TripPlanner } from "./app/TripPlanner";
+import { ThemeProvider } from "@emotion/react";
+import { CssBaseline, Box } from "@mui/material";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

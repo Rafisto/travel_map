@@ -1,7 +1,7 @@
-import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import './map.css';
 import {Box, Typography} from "@mui/material";
-import {HeaderTextStyle, HeaderWrapperStyle} from "./text.tsx";
+import { HeaderTextStyle, HeaderWrapperStyle } from "../../general/.styles.tsx";
+import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 
 export type TripContentMapProps = {
     obj: {

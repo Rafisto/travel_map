@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { HeaderWrapperStyle, HeaderTextStyle, TextStyle } from "./text";
+import { HeaderWrapperStyle, HeaderTextStyle, TextStyle } from "../../general/.styles";
 
 type TripContentImageTextProps = {
   header: string;

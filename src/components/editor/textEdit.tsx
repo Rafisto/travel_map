@@ -10,7 +10,7 @@ interface TripContentTextProps {
   text: string;
 }
 
-const TripContentText = ({ header, text }: TripContentTextProps) => {
+const TripEditText = ({ header, text }: TripContentTextProps) => {
   return (
     <>
       <Box sx={HeaderWrapperStyle}>
@@ -21,4 +21,4 @@ const TripContentText = ({ header, text }: TripContentTextProps) => {
   );
 };
 
-export default TripContentText;
+export default TripEditText;
