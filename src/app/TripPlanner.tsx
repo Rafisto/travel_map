@@ -29,7 +29,7 @@ export const TripPlanner = () => {
 
   useEffect(() => {
     const LoadTripContent = () => {
-      void fetch("/trip.json", {
+      void fetch("./trip.json", {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
